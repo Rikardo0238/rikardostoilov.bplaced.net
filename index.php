@@ -1,239 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Rikardo.ch</title>
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        
-        <!-- Navigation -->
-        <?php
-            require 'header.php';
-        ?>
+<?php
+	include("header.php");
 
-        <!-- Header-->
-        <header class="bg-dark py-1">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Rikardo.ch</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Willkommen zu meiner Seite, hier verkaufe ich meine Alten Sachen zu günstigen Preisen.</p>
-                </div>
-            </div>
-        </header>
-        <!-- Section-->
-        <section class="py-1">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    <!-- Product price-->
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    <!-- Product price-->
-                                    $120.00 - $280.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+	$products = array(
+		array("bilder/Babuskha.png", "Baba??", 4),
+		array("bilder/green car.jpg", "Lambo", 560000),
+		array("bilder/green man.png", "Ninaj Turtel", 21),
+		array("bilder/Roblox.png", "Robux", 999),
+		array("bilder/Seiten auf Null.png", "Haarschnit", 25),
+		array("bilder/Round Bear.png", "Ausgang mit Agan", 35),
+		array("bilder/supra gt4.jpg", "Supra GT4", 200000),
+		array("bilder/The Weeknd.jpg", "Foto mit The Weeknd", 0),
+		array("bilder/Trippler.png", "Reise nach Chernobyl", 10),
+	)
+?>
 
-        <!-- Footer-->
-        <?php
-            require 'footer.php';
-        ?>
-    </body>
-</html>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link active" href="index.php">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="sitemap.php">Sitemap</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="profile.php">Profil</a>
+			</li>
+		</ul>
+	</div>
+	<?php
+		if(isset($_SESSION["email"]) && isset($_SESSION["password"])) {
+			echo "<a class='btn btn-outline-light' href='cart.php'>Einkaufswagen</a>";
+		} else {
+			echo "<a class='btn btn-outline-light' href='login.php'>Login</a>";
+		}
+	?>
+</nav>
+
+<div class="container title text-center">
+	<h3>Willkommen zu meinem Online-Shop!</h3>
+</div>
+
+<div class="container belowtitle text-center">
+	<p>Sieh dich ruhig um.</p>
+</div>
+
+<div class="container text-center">
+	<div class="row justify-content-center">
+		<?php 
+			for($row = 0; $row < sizeof($products); $row++) {
+				echo "
+					<div class='col-auto mb-3'>
+						<div class='card'>
+							<a href='".$products[$row][0]."' target='_blank'><img class='card-img-top' src='".$products[$row][0]."'alt='Card image'></a>
+							<div class='card-body'>
+								<h5 class='card-title'>".$products[$row][1]."</h5>
+								<p class='card-text'>".$products[$row][2]." Fr.</p>
+								<button class='btn btn-dark'>In den Einkaufswagen</button>
+							</div>
+						</div>
+					</div>";
+			}
+		?>
+		
+
+		<!-- <div class="col-auto mb-3">
+			<div class="card">
+				<img class="card-img-top" src="bilder/supra gt4.jpg" alt="Card image">
+				<div class="card-body">
+					<h5 class="card-title">Produkt</h5>
+					<p class="card-text">Something about the product.</p>
+					<button class="btn btn-dark">In den Einkaufswagen</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-auto mb-3">
+			<div class="card">
+				<img class="card-img-top" src="bilder/supra gt4.jpg" alt="Card image">
+				<div class="card-body">
+					<h5 class="card-title">Produkt</h5>
+					<p class="card-text">Something about the product.</p>
+					<button class="btn btn-dark">In den Einkaufswagen</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-auto mb-3">
+			<div class="card">
+				<img class="card-img-top" src="bilder/supra gt4.jpg" alt="Card image">
+				<div class="card-body">
+					<h5 class="card-title">Produkt</h5>
+					<p class="card-text">Something about the product.</p>
+					<button class="btn btn-dark">In den Einkaufswagen</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-auto mb-3">
+			<div class="card">
+				<img class="card-img-top " src="bilder/supra gt4.jpg" alt="Card image">
+				<div class="card-body">
+					<h5 class="card-title">Produkt</h5>
+					<p class="card-text">Something about the product.</p>
+					<button class="btn btn-dark">In den Einkaufswagen</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-auto mb-3">
+			<div class="card">
+				<img class="card-img-top " src="bilder/supra gt4.jpg" alt="Card image">
+				<div class="card-body">
+					<h5 class="card-title">Produkt</h5>
+					<p class="card-text">Something about the product.</p>
+					<button class="btn btn-dark">In den Einkaufswagen</button>
+				</div>
+			</div>
+		</div> -->
+	</div>
+</div>
+
+<?php
+	include("footer.php");
+?>
