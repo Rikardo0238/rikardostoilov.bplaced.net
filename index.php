@@ -2,15 +2,15 @@
 	include("header.php");
 
 	$products = array(
-		array("bilder/Babuskha.png", "Baba??", 4),
-		array("bilder/green car.jpg", "Lambo", 560000),
-		array("bilder/green man.png", "Ninaj Turtel", 21),
-		array("bilder/Roblox.png", "Robux", 999),
-		array("bilder/Seiten auf Null.png", "Haarschnit", 25),
-		array("bilder/Round Bear.png", "Ausgang mit Agan", 35),
-		array("bilder/supra gt4.jpg", "Supra GT4", 200000),
-		array("bilder/The Weeknd.jpg", "Foto mit The Weeknd", 0),
-		array("bilder/Trippler.png", "Reise nach Chernobyl", 10),
+		array("view/bilder/green car.jpg", "Audi RS3 Cars", 9999999),
+		array("view/bilder/supra gt4.jpg", "auto", 500000),
+		array("view/bilder/supra gt4.jpg", "auto", 500000),
+		array("view/bilder/supra gt4.jpg", "auto", 500000),
+		array("view/bilder/supra gt4.jpg", "auto", 500000),
+		array("view/bilder/supra gt4.jpg", "auto", 500000),
+		array("view/bilder/supra gt4.jpg", "auto", 500000),
+		array("view/bilder/supra gt4.jpg", "auto", 500000),
+		array("view/bilder/supra gt4.jpg", "auto", 500000),
 	)
 ?>
 
@@ -65,62 +65,6 @@
 					</div>";
 			}
 		?>
-		
-
-		<!-- <div class="col-auto mb-3">
-			<div class="card">
-				<img class="card-img-top" src="bilder/supra gt4.jpg" alt="Card image">
-				<div class="card-body">
-					<h5 class="card-title">Produkt</h5>
-					<p class="card-text">Something about the product.</p>
-					<button class="btn btn-dark">In den Einkaufswagen</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-auto mb-3">
-			<div class="card">
-				<img class="card-img-top" src="bilder/supra gt4.jpg" alt="Card image">
-				<div class="card-body">
-					<h5 class="card-title">Produkt</h5>
-					<p class="card-text">Something about the product.</p>
-					<button class="btn btn-dark">In den Einkaufswagen</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-auto mb-3">
-			<div class="card">
-				<img class="card-img-top" src="bilder/supra gt4.jpg" alt="Card image">
-				<div class="card-body">
-					<h5 class="card-title">Produkt</h5>
-					<p class="card-text">Something about the product.</p>
-					<button class="btn btn-dark">In den Einkaufswagen</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-auto mb-3">
-			<div class="card">
-				<img class="card-img-top " src="bilder/supra gt4.jpg" alt="Card image">
-				<div class="card-body">
-					<h5 class="card-title">Produkt</h5>
-					<p class="card-text">Something about the product.</p>
-					<button class="btn btn-dark">In den Einkaufswagen</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-auto mb-3">
-			<div class="card">
-				<img class="card-img-top " src="bilder/supra gt4.jpg" alt="Card image">
-				<div class="card-body">
-					<h5 class="card-title">Produkt</h5>
-					<p class="card-text">Something about the product.</p>
-					<button class="btn btn-dark">In den Einkaufswagen</button>
-				</div>
-			</div>
-		</div> -->
 	</div>
 </div>
 
