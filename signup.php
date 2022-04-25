@@ -1,5 +1,5 @@
 <?php
-    include("header.php");
+	include("header.php");
 
 	if (isset($_SESSION["email"]) && isset($_SESSION["password"])) {
         header("Location: profile.php");
@@ -18,21 +18,21 @@
 				<a class="nav-link" href="sitemap.php">Sitemap</a>
 				<a class="nav-link" href="profile.php">Profil</a>
 			</div>
-			<a class='btn btn-light' href='login.php'>Login</a>
+			<a class='btn btn-outline-light' href='login.php'>Login</a>
 		</div>
 	</div>
 </nav>
 
 <div class="container title text-center">
-    <h3>Login</h3>
+    <h3>Registrieren</h3>
 </div>
 
 <div class="container belowtitle text-center">
-    <p>Melde dich an.</p>
+    <p>Erstelle ein Konto.</p>
 </div>
 
 <div class="container d-flex justify-content-center">
-	<form action="controller/validatelogin.php" method="post">
+	<form action="controller/dbsignup.php" method="post">
 		<div class="form-group">
 			<label for="email">E-Mail</label>
 			<input type="email" class="form-control" name="email" placeholder="E-Mail Adresse eingeben" required>
@@ -44,15 +44,15 @@
 			<small class="form-text text-muted">*Pflichtfeld</small>
 		</div><br>
 		<div class="text-center">
-			<button type="submit" class="btn btn-outline-dark">Anmelden</button>
+			<button type="submit" class="btn btn-outline-dark">Registrieren</button>
 		</div>
 	</form>
 </div>
 
 <div class="text-center">
-	<a href="signup.php" class="link-dark">Noch kein Konto?</a>
+	<a href="login.php" class="link-dark">Besitzt schon ein Konto?</a>
 </div>
 
 <?php
-    include("footer.php");
+	include("footer.php");
 ?>

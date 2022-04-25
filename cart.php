@@ -6,24 +6,20 @@
     }
 ?>
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="sitemap.php">Sitemap</a>
-            </li>
-            <li class="nav-item">
-				<a class="nav-link active" href="profile.php">Profil</a>
-			</li>
-        </ul>
-    </div>
-    <a class='btn btn-outline-light' href='cart.php'>Einkaufswagen</a>
+<div class="container-fluid">
+		<a class="navbar-brand" href="#">Rikardo.ch</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-link" href="index.php">Startseite</a>
+				<a class="nav-link" href="sitemap.php">Sitemap</a>
+				<a class="nav-link" href="profile.php">Profil</a>
+			</div>
+			<a class='btn btn-light' href='cart.php'>Einkaufswagen</a>
+		</div>
+	</div>
 </nav>
 
 <div class="container title text-center">

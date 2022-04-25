@@ -2,7 +2,7 @@
 	include("header.php");
 
 	$products = array(
-		array("view/bilder/green car.jpg", "Audi RS3 Cars", 9999999),
+		array("view/bilder/supra gt4.jpg", "auto", 500000),
 		array("view/bilder/supra gt4.jpg", "auto", 500000),
 		array("view/bilder/supra gt4.jpg", "auto", 500000),
 		array("view/bilder/supra gt4.jpg", "auto", 500000),
@@ -14,30 +14,27 @@
 	)
 ?>
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="collapsibleNavbar">
-		<ul class="navbar-nav">
-			<li class="nav-item">
-				<a class="nav-link active" href="index.php">Home</a>
-			</li>
-			<li class="nav-item">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">Rikardo.ch</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-link active" href="index.php">Startseite</a>
 				<a class="nav-link" href="sitemap.php">Sitemap</a>
-			</li>
-			<li class="nav-item">
 				<a class="nav-link" href="profile.php">Profil</a>
-			</li>
-		</ul>
+			</div>
+			<?php
+				if(isset($_SESSION["email"]) && isset($_SESSION["password"])) {
+					echo "<a class='btn btn-outline-light' href='cart.php'>Einkaufswagen</a>";
+				} else {
+					echo "<a class='btn btn-outline-light' href='login.php'>Login</a>";
+				}
+			?>
+		</div>
 	</div>
-	<?php
-		if(isset($_SESSION["email"]) && isset($_SESSION["password"])) {
-			echo "<a class='btn btn-outline-light' href='cart.php'>Einkaufswagen</a>";
-		} else {
-			echo "<a class='btn btn-outline-light' href='login.php'>Login</a>";
-		}
-	?>
 </nav>
 
 <div class="container title text-center">
