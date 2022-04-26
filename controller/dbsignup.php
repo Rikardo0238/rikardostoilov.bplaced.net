@@ -4,34 +4,30 @@
     if ($_REQUEST["email"] == "" || $_REQUEST["password"] == "") {
         header("Location: /../signup.php");
     } else {
-        $_SESSION["email"] = $_POST["email"];
-        $_SESSION["password"] = $_POST["password"];
+        $_SESSION["email"] = $_REQUEST["email"];
+        $_SESSION["password"] = $_REQUEST["password"];
 
-        $email = $_SESSION["email"];
-        $password = $_SESSION["password"];
+        $email = ($_SESSION["email"]);
+        $password = hash('ripemd160', $_SESSION["password"]);
 
         $servername = "localhost";
         $username = "root";
         $password = "";
         $dbname = "m133";
 
-        $conn = mysqli_connect($servername, $username, $password, $dbname);
-        if (!$conn) {
-            die("Connection failed: " . mysqli_connect_error());
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        if ($conn->connect_error) {
+            die("Verbindung mit der Datenbank konnte nicht hergestellt werden, versuchen Sie es später erneut.");
         }
 
-        $sql = "INSERT INTO benutzer(email, `password`) VALUES($email, $password)";
+        $sql = "INSERT INTO user (`email`, `password`) VALUES ('$email', '$password')";
 
-
-        if (mysqli_query($conn, $sql)) {
-            echo "<h1>Konto erfolgreich erstellt</h1>";
+        if ($conn->query($sql) === TRUE) {
+            $conn->close();
+            header("Location: /../profile.php");
         } else {
-            // echo "<h1>Error: Konto konnte nicht hergestellt werden, bitte versuche sie es erneut.</h1>";
-            echo "Error: " . $sql . "<br>" . mysqli_error($conn) . "<br>" . $email . "<br>" . $password;
+            $conn->close();
+            echo "Konto konnte nicht hergestellt werden, bitte versuchen Sie es später erneut.";
         }
-
-        mysqli_close($conn);
-
-        // header("Location: /../profile.php");
     }
 ?>
