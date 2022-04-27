@@ -35,12 +35,12 @@
 	<form action="controller/validatelogin.php" method="post">
 		<div class="form-group">
 			<label for="email">E-Mail</label>
-			<input type="email" class="form-control" name="email" placeholder="E-Mail Adresse eingeben" required>
+			<input type="email" class="form-control" name="email" placeholder="E-Mail Adresse eingeben" autocomplete="off" required>
 			<small class="form-text text-muted">*Pflichtfeld</small>
 		</div><br>
 		<div class="form-group">
 			<label for="password">Passwort</label>
-			<input type="password" class="form-control" name="password" placeholder="Passwort eingeben" required>
+			<input type="password" class="form-control" name="password" placeholder="Passwort eingeben" autocomplete="off" required>
 			<small class="form-text text-muted">*Pflichtfeld</small>
 		</div><br>
 		<div class="text-center">

@@ -36,25 +36,11 @@
 <div class="container d-flex justify-content-center">
 	<ul>
 		<li><a href="index.php" class="link-dark">Home</a></li>
-		<!-- <ul>
-			<li>Produkte in den Einkaufswagen</li>
-		</ul> -->
 		<li><a href="sitemap.php" class="link-dark">Sitemap</a></li>
-		<!-- <ul>
-			<li>Komplette Seiten Navigation</li>
-		</ul> -->
 		<li><a href="cart.php" class="link-dark">Einkaufswagen</a></li>
-		<!-- <ul>
-			<li>Produkte im Einkaufswagen</li>
-		</ul> -->
 		<li><a href="profile.php" class="link-dark">Profil</a></li>
-		<!-- <ul>
-			<li>E-mail und Passwort</li>
-		</ul> -->
 		<li><a href="login.php" class="link-dark">Login</a></li>
-		<!-- <ul>
-			<li>Anmelden</li>
-		</ul> -->
+		<li><a href="signup.php" class="link-dark">Registrieren</a></li>
 	</ul>
 </div>
 

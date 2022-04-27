@@ -11,7 +11,11 @@
 		array("view/bilder/supra gt4.jpg", "auto", 500000),
 		array("view/bilder/supra gt4.jpg", "auto", 500000),
 		array("view/bilder/supra gt4.jpg", "auto", 500000),
-	)
+	);
+
+	$cart = array(
+		array(),
+	);
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -55,8 +59,15 @@
 							<a href='".$products[$row][0]."' target='_blank'><img class='card-img-top' src='".$products[$row][0]."'alt='Card image'></a>
 							<div class='card-body'>
 								<h5 class='card-title'>".$products[$row][1]."</h5>
-								<p class='card-text'>".$products[$row][2]." Fr.</p>
-								<button class='btn btn-dark'>In den Einkaufswagen</button>
+								<p class='card-text'>".$products[$row][2]." Fr.</p>";
+
+								if(isset($_REQUEST["addToCart$row"])) {
+									echo "Hallo";
+								}
+				echo "
+								<form method='post'>
+									<input type='submit' name='addToCart$row' class='btn btn-dark' value='Zum Einkaufswagen hinzufügen'/>
+								</form>
 							</div>
 						</div>
 					</div>";
