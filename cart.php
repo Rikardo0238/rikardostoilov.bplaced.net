@@ -4,10 +4,15 @@
     if ($_SESSION["email"] == "" || $_SESSION["password"] == "") {
         header("Location: login.php");
     }
+
+	if(isset($_REQUEST["emptyCart"])) {
+		$_SESSION["cart"] = array();
+	}
 ?>
 
-<div class="container-fluid">
-		<a class="navbar-brand" href="#">Rikardo.ch</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="index.php">Rikardo.ch</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -31,7 +36,34 @@
 </div>
 
 <div class="container text-center">
-    <p>Coming Soon</p>
+	<div class="row justify-content-center">
+		<table class="table table-bordered">
+			<tr>
+				<th>Produkt</th>
+				<th>Preis</th>
+			</tr>
+			<?php
+				$sum = 0;
+				for($row = 0; $row < sizeof($_SESSION["cart"]); $row++) {
+					$sum = $sum + $_SESSION["cart"][$row][2];
+					echo "
+						<tr>
+							<td>".$_SESSION["cart"][$row][1]."</td>
+							<td>".$_SESSION["cart"][$row][2]."</td>
+						</tr>";
+				}
+				echo "
+					<tr>
+						<th>Summe</th>
+						<th>".$sum."</th>
+					</tr>";
+			?>
+		</table>
+	</div>
+
+	<form method='post'>
+		<input type='submit' name='emptyCart' class='btn btn-dark' value='Einkaufswagen leeren'/>
+	</form>
 </div>
 
 <?php
