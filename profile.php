@@ -18,7 +18,7 @@
 				<a class="nav-link" href="sitemap.php">Sitemap</a>
 				<a class="nav-link active" href="profile.php">Profil</a>
 			</div>
-			<a class='btn btn-outline-light' href='cart.php'>Einkaufswagen</a>
+			<a class="btn btn-outline-light" href="cart.php">Einkaufswagen</a>
 		</div>
 	</div>
 </nav>
