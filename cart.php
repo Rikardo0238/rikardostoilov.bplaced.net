@@ -1,7 +1,7 @@
 <?php
     include("header.php");
 
-    if ($_SESSION["email"] == "" || $_SESSION["password"] == "") {
+    if($_SESSION["email"] == "" || $_SESSION["password"] == "") {
         header("Location: login.php");
     }
 
@@ -38,10 +38,13 @@
 <div class="container text-center">
 	<div class="row justify-content-center">
 		<table class="table table-bordered">
-			<tr>
-				<th>Produkt</th>
-				<th>Preis</th>
-			</tr>
+			<thead>
+				<tr>
+					<th class="produkt">Produkt</th>
+					<th class="price">Preis</th>
+				</tr>
+			</thead>
+			<tbody>
 			<?php
 				$sum = 0;
 				for($row = 0; $row < sizeof($_SESSION["cart"]); $row++) {
@@ -53,10 +56,13 @@
 						</tr>";
 				}
 				echo "
-					<tr>
-						<th>Summe</th>
-						<th>".$sum."</th>
-					</tr>";
+					</tbody>
+					<tfoot>
+						<tr>
+							<th>Summe</th>
+							<th>".$sum."</th>
+						</tr>
+					</tfoot>";
 			?>
 		</table>
 	</div>

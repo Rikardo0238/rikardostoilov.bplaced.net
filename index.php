@@ -62,7 +62,11 @@
 								<p class='card-text'>".$products[$row][2]." Fr.</p>";
 
 				if(isset($_REQUEST["addToCart$row"])) {
-					array_push($_SESSION["cart"], $products[$row]);
+					if(isset($_SESSION["email"]) && isset($_SESSION["password"])) {
+						array_push($_SESSION["cart"], $products[$row]);
+					} else {
+						header("Location: login.php");
+					}
 				}
 
 				echo "
